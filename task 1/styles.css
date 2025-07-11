@@ -1,0 +1,66 @@
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh; /* full height */
+  background-color: #ddd5d5;
+  overflow-y: auto; /* scroll if items overflow */
+  transition: background-color 0.3s ease;
+}
+
+.sidebar.scrolled {
+  background-color: #8e8484;
+}
+
+/* Vertical menu list */
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 12px 16px;
+  color: #000000;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover color change */
+.sidebar ul li a:hover {
+  background-color: #54b6d9;
+  color: #fbfbfb;
+}
+
+/* Color style when scrolled state active */
+.sidebar.scrolled ul li a {
+  color: #fff;
+}
+
+.sidebar.scrolled ul li a:hover {
+  background-color: #bd1515;
+  color: #fff;
+}
+
+/* Active/current link class */
+.sidebar ul li a.active {
+  background-color: #aa9928;
+  color: rgb(246, 244, 244);
+}
+
+/* Main content area (offset because of sidebar width) */
+.content {
+  margin-left: 180px;
+  padding: 20px;
+}
+
+/* Section spacing */
+.content section {
+  margin-bottom: 200px;
+}
+.content{
+    background-color: #d5c8c8;
+}
